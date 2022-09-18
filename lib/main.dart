@@ -1,5 +1,6 @@
 
 import 'package:codigo_init/challenge2_page.dart';
+import 'package:codigo_init/challenge3_page.dart';
 import 'package:codigo_init/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Challenge2Page()
+      home: Challenge3Page()
     );
   }
 }
