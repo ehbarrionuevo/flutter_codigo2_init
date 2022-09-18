@@ -13,33 +13,54 @@ class Challenge3Page extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 12.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 14.0, vertical: 12.0),
             child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 1.5),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 4.0, vertical: 1.5),
                       color: const Color(0xffF6A521),
                       child: const Text(
                         "Travel",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12.0
-                        ),
+                        style: TextStyle(color: Colors.white, fontSize: 12.0),
                       ),
                     ),
                     Row(
                       children: [
-                        Icon(Icons.timer,),
-                        Text("12:23",),
+                        Icon(
+                          Icons.timelapse,
+                          color: Colors.black26,
+                          size: 18.0,
+                        ),
+                        SizedBox(
+                          width: 4.0,
+                        ),
+                        Text(
+                          "12:23",
+                          style: TextStyle(
+                            fontSize: 12.0,
+                            color: Colors.black26,
+                          ),
+                        ),
                       ],
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 10.0,
+                ),
                 Text(
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    color: Colors.black.withOpacity(0.65),
+                    height: 1.4,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ],
             ),
