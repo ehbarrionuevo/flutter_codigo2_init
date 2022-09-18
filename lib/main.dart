@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -86,6 +85,40 @@ class MyApp extends StatelessWidget {
                       height: 10.0,
                     ),
 
+                    Row(
+                      children: [
+                        Text(
+                          "By ",
+                        ),
+                        Text(
+                          "Juan Lopez ",
+                          style: TextStyle(
+                            color: Colors.blue,
+                          ),
+                        ),
+                        Text(
+                          "Forbes List",
+                        ),
+                      ],
+                    ),
+
+                    RichText(
+                      text: TextSpan(
+                        text: 'Hello ',
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                        children:[
+                          TextSpan(text: 'bold', style: TextStyle(fontWeight: FontWeight.bold)),
+                          TextSpan(text: ' world!'),
+                        ],
+                      ),
+                    ),
+
+                    SizedBox(
+                      height: 10,
+                    ),
+
                     Image.network(
                       "https://images.pexels.com/photos/13135852/pexels-photo-13135852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                       height: 220.0,
@@ -100,10 +133,9 @@ class MyApp extends StatelessWidget {
                     Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
                       style: TextStyle(
-                        fontSize: 14.0,
-                        color: Colors.black.withOpacity(0.6),
-                        height: 1.4
-                      ),
+                          fontSize: 14.0,
+                          color: Colors.black.withOpacity(0.6),
+                          height: 1.4),
                     ),
 
                     SizedBox(
@@ -113,10 +145,9 @@ class MyApp extends StatelessWidget {
                     Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                       style: TextStyle(
-                        fontSize: 16.0,
-                        height: 1.4,
-                        color: Color(0xff000000).withOpacity(0.65)
-                      ),
+                          fontSize: 16.0,
+                          height: 1.4,
+                          color: Color(0xff000000).withOpacity(0.65)),
                     ),
                     // Divider(
                     //   thickness: 1.3,
@@ -131,7 +162,6 @@ class MyApp extends StatelessWidget {
               //     "LISTS",
               //   ),
               // ),
-
             ],
           ),
         ),
