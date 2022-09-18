@@ -62,6 +62,76 @@ class Challenge3Page extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.edit,
+                          size: 16.0,
+                          color: Colors.black26,
+                        ),
+                        Text(
+                          "Juan Carlos Lopez",
+                          style: TextStyle(
+                            color: Colors.black26,
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.chat_bubble,
+                          size: 16.0,
+                          color: Colors.black26,
+                        ),
+                        Text(
+                          " 23",
+                          style: TextStyle(
+                            color: Colors.black26,
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 6.0,
+                        ),
+                        Icon(
+                          Icons.share,
+                          size: 16.0,
+                          color: Colors.black26,
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                const Divider(),
+                Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  style: TextStyle(
+                    height: 1.4,
+                    color: Colors.black54,
+                  ),
+                ),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                Image.network(
+                  "https://images.pexels.com/photos/758742/pexels-photo-758742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                  height: 140,
+                  width: double.infinity,
+                  fit: BoxFit.cover,
+                ),
               ],
             ),
           ),
