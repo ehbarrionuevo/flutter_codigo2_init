@@ -126,11 +126,27 @@ class Challenge3Page extends StatelessWidget {
                 const SizedBox(
                   height: 8.0,
                 ),
-                Image.network(
-                  "https://images.pexels.com/photos/758742/pexels-photo-758742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-                  height: 140,
+                // Image.network(
+                //   "https://images.pexels.com/photos/758742/pexels-photo-758742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                //   height: 140,
+                //   width: double.infinity,
+                //   fit: BoxFit.cover,
+                // ),
+                SizedBox(
                   width: double.infinity,
-                  fit: BoxFit.cover,
+                  height: 50.0,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.amber,
+                    ),
+                    child: Text(
+                      "Get free trial",
+                      style: TextStyle(
+                        fontSize: 18.0
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
